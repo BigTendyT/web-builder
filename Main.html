@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/addons/p5.sound.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8" />
+
+  </head>
+  <body>
+    <main>
+    </main>
+    <script src="web-library.js"></script>
+    <script>
+     let links = ["https://bigtendyt.github.io/ytsearch/","https://bigtendyt.github.io/blockedloader/","https://www.youtube.com/"]
+    let pages = ["Pages/Page2","Pages/Page2","Pages/Page2"]
+    
+    
+  let welcome = new textElement(0,100,"P5 Web Builder","HBold",50);
+  let header = new textElement(0,150,"Reference","HNF",40);
+  let subheader = new textElement(0,200,"List of all Web-Elements","HNF",22);
+  let list = new textListButton(0, 300,["hello","hello2","hello3"],pages,50,25);
+      
+      function draw() {
+      cursorState="static";
+     background(0);
+    pageSize=1000;
+    welcome.printElem();
+    header.printElem();
+    subheader.printElem();
+    list.printElem();
+  scrollBar();
+  cursorManager();
+  
+}
+    
+    </script>
+  </body>
+</html>
